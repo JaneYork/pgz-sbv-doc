@@ -1,6 +1,6 @@
 <template>
   <Navigation @langChange="onLangChange" />
-  <template v-if="isMobile">
+  <template v-if="isMobile && false">
     <Ecosystem />
   </template>
   <template v-else>

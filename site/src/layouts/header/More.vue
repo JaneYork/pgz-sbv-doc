@@ -10,7 +10,7 @@
         }"
       />
     </a-button>
-    <template #overlay>
+    <template v-if="false" #overlay>
       <Ecosystem />
     </template>
   </a-dropdown>

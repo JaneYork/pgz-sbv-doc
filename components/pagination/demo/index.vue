@@ -1,7 +1,7 @@
 <template>
   <demo-sort :cols="1">
     <Basic />
-    <More />
+    <More v-if="false" />
     <Changer />
     <CustomChanger />
     <Jump />
