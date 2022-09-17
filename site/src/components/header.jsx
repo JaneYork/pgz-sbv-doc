@@ -24,13 +24,14 @@ export default {
     },
     initDocSearch(locale) {
       window.docsearch({
-        apiKey: '92003c1d1d07beef165b08446f4224a3',
-        indexName: 'antdv',
+        apiKey: '82ac4e1b893a2d92e546066b0a47ef15',
+        indexName: 'pusdn',
         inputSelector: '#search-box input',
         algoliaOptions: { facetFilters: [isZhCN(locale) ? 'cn' : 'en'] },
         transformData(hits) {
           hits.forEach(hit => {
-            hit.url = hit.url.replace('www.antdv.com', window.location.host);
+            // 暂且注释
+            // hit.url = hit.url.replace('www.antdv.com', window.location.host);
             hit.url = hit.url.replace('https:', window.location.protocol);
           });
           return hits;

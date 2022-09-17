@@ -111,8 +111,8 @@ export default defineComponent({
     };
     const initDocSearch = () => {
       window.docsearch({
-        apiKey: '92003c1d1d07beef165b08446f4224a31',
-        indexName: 'antdv',
+        apiKey: '82ac4e1b893a2d92e546066b0a47ef15',
+        indexName: 'pusdn',
         inputSelector: '#search-box input',
         algoliaOptions: { facetFilters: [`tags:${globalConfig.isZhCN.value ? 'cn' : 'en'}`] },
         transformData(hits: any[]) {
