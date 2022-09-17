@@ -12,7 +12,7 @@
           wrapper-class-name="drawer-wrapper"
           width="60%"
         >
-          <surelyVueVue />
+          <surelyVueVue v-if="false" />
           <Menu :menus="dataSource" :active-menu-item="activeMenuItem" :is-zh-c-n="isZhCN" />
           <template #handle>
             <div class="drawer-handle" @click="handleClickShowButton">
