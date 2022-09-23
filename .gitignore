@@ -60,8 +60,9 @@ dist
 lib
 es
 _site
-yarn.lock
-package-lock.json
+# 提交lock文件
+# yarn.lock
+# package-lock.json
 pnpm-lock.yaml
 /coverage
 
