@@ -6,7 +6,7 @@ export default [
   },
   {
     path: 'vue/intro-cn',
-    meta: { enTitle: 'Intro', title: '1.简介', category: 'intro' },
+    meta: { enTitle: 'Intro', title: '简介', category: 'intro' },
     component: () => import('../vueDocs/introduction.zh-CN.md'),
   },
   {
@@ -16,18 +16,40 @@ export default [
   },
   {
     path: 'vue/quick-cn',
-    meta: { enTitle: 'System', type: '快速了解', title: '系统功能一览', category: 'intro' },
+    meta: {
+      enTitle: 'System',
+      type: '快速了解',
+      title: '系统功能一览',
+      category: 'intro',
+      order: 2,
+    },
     component: () => import('../vueDocs/系统功能一览.zh-CN.md'),
   },
   {
+    path: 'vue/secret-cn',
+    meta: { enTitle: 'Secret', type: '快速了解', title: '安全性方案', category: 'intro', order: 4 },
+    component: () => import('../vueDocs/安全性方案.zh-CN.md'),
+  },
+  {
     path: 'vue/tech-cn',
-    meta: { enTitle: 'Tech', type: '快速了解', title: '技术选型及软件架构图', category: 'intro' },
+    meta: {
+      enTitle: 'Tech',
+      type: '快速了解',
+      title: '技术选型及软件架构图',
+      category: 'intro',
+      order: 3,
+    },
     component: () => import('../vueDocs/tech.md'),
   },
   {
     path: 'vue/fe-cn',
     meta: { enTitle: 'Charts', type: '前端手册', title: '图表示例', category: 'intro' },
     component: () => import('../vueDocs/frontend.zh-CN.md'),
+  },
+  {
+    path: 'vue/callExe-cn',
+    meta: { enTitle: 'Charts', type: '前端手册', title: '唤起客户端', category: 'intro' },
+    component: () => import('../vueDocs/前端唤起EXE.zh-CN.md'),
   },
   {
     path: 'vue/changelog-cn',

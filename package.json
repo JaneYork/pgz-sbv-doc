@@ -81,7 +81,7 @@
   "bugs": {
     "url": "https://github.com/vueComponent/ant-design-vue/issues"
   },
-  "homepage": "https://www.antdv.com/",
+  "homepage": "https://pgz.pusdn.com/",
   "peerDependencies": {
     "vue": ">=3.2.0"
   },

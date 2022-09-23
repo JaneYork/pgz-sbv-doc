@@ -75,7 +75,8 @@ const useMenus = (): {
           title: key,
           order: typeOrder[key] && typeOrder[key].order,
           enTitle: typeOrder[key] && typeOrder[key].en,
-          children: sortBy(group[key], 'title'),
+          // children: sortBy(group[key], 'title'),
+          children: sortBy(group[key], 'order'),
         };
       })
       .sort((a, b) => a.order - b.order);
