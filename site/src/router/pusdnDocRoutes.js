@@ -18,7 +18,7 @@ export default [
     path: 'vue/quick-cn',
     meta: {
       enTitle: 'System',
-      type: '快速了解',
+      type: '我们的优势',
       title: '系统功能一览',
       category: 'intro',
       order: 2,
@@ -27,14 +27,30 @@ export default [
   },
   {
     path: 'vue/secret-cn',
-    meta: { enTitle: 'Secret', type: '快速了解', title: '安全性方案', category: 'intro', order: 4 },
+    meta: {
+      enTitle: 'Secret',
+      type: '我们的优势',
+      title: '安全性方案',
+      category: 'intro',
+      order: 4,
+    },
     component: () => import('../vueDocs/安全性方案.zh-CN.md'),
+  },
+  {
+    path: 'vue/sysDetail-cn',
+    meta: { enTitle: 'Secret', type: '我们的优势', title: '模块功能详览', category: 'intro' },
+    component: () => import('../vueDocs/模块功能详览.zh-CN.md'),
+  },
+  {
+    path: 'vue/code-cn',
+    meta: { enTitle: 'Code', type: '我们的优势', title: '高质量强规范', category: 'intro' },
+    component: () => import('../vueDocs/开发规范.zh-CN.md'),
   },
   {
     path: 'vue/tech-cn',
     meta: {
       enTitle: 'Tech',
-      type: '快速了解',
+      type: '我们的优势',
       title: '技术选型及软件架构图',
       category: 'intro',
       order: 3,
