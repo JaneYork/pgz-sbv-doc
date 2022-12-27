@@ -19,6 +19,17 @@ const routes = [
       ...demoRoutes,
     ],
   },
+  {
+    path: '/custom-components',
+    component: Layout,
+    children: [
+      {
+        path: 'overview:lang(.*)',
+        meta: { enTitle: 'Welfare', type: '其他', title: '组件总览', category: 'custom' },
+        component: () => import('../vueDocs/pgz-overview.zh-CN.md'),
+      },
+    ],
+  },
   // pusdn doc
   {
     path: '/intro',

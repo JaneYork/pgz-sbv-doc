@@ -21,6 +21,11 @@
         {{ $t('app.header.menu.components') }}
       </router-link>
     </a-menu-item>
+    <a-menu-item key="custom-components">
+      <router-link :to="getLocalizedPathname('/custom-components/overview/', isZhCN)">
+        {{ $t('app.header.menu.custom-components') }}
+      </router-link>
+    </a-menu-item>
     <a-menu-item v-if="isZhCN && false" key="surely-vue">
       <a
         href="https://www.surely.cool"
